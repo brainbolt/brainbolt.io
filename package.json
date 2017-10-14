@@ -5,10 +5,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --delete-output-path=false && mv dist/main.*.bundle.js dist/main.js && mv dist/vendor.*.bundle.js dist/vendor.js && mv dist/inline.*.bundle.js dist/inline.js && mv dist/polyfills.*.bundle.js dist/polyfills.js && cp -f src/index.dist-default.html dist/index.html",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "b": "ng b --prod --delete-output-path=false --output-hashing none"
   },
   "private": true,
   "dependencies": {
