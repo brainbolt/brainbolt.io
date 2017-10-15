@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { MatCardModule, MatButtonModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { ProjectService } from "./project.service";
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     MatCardModule, MatButtonModule
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
