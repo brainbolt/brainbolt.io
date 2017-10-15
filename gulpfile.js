@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var execSync = require('child_process').execSync;
 var del = require('del');
 
-gulp.task('b', function (cb) {
+gulp.task('deploy', function (cb) {
   console.log('deleting files...');
   del.sync([
     '../brainbolt.github.io/**/*',
