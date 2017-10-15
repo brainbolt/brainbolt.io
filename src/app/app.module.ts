@@ -6,11 +6,13 @@ import { MatCardModule, MatButtonModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ProjectService } from "./project.service";
+import { ProjectCardComponent } from './project-card/project-card.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
