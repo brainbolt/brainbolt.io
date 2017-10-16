@@ -1,0 +1,12 @@
+// define 3 theme color
+// mat-palette accepts $palette-name, main, lighter and darker variants
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$primary: mat-palette($mat-grey);
+$accent:  mat-palette($mat-deep-orange, A200, A100, A400);
+$warn:    mat-palette($mat-teal);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$brainbolt-theme: mat-light-theme($primary, $accent, $warn);

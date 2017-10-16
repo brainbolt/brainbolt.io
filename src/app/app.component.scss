@@ -1,0 +1,27 @@
+// Import all the tools needed to customize the theme and extract parts of it
+@import '~@angular/material/theming';
+
+// Define a mixin that accepts a theme and outputs the color styles for the component.
+@mixin app-component($theme) {
+  // Extract whichever individual palettes you need from the theme.
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  .header-row {    
+    display: flex;
+    font-size: 250%;
+    height: 200px;
+  }
+  .heading {
+    margin:auto;
+    color: mat-color($primary, 600);
+    .dot {
+      color: mat-color($accent);
+    }
+  }
+  .card-row {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    flex-wrap: wrap}
+}
