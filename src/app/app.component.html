@@ -1,7 +1,27 @@
-<div class='header-row'>
-  <h1 class='heading mat-display-2'>brainbolt<span class="dot">.</span>io</h1>
-  <!-- <div class="heading grey">brainbolt<span class="orange">.</span>io</div> -->
+<div class='heading-row'>
+  <div class='heading-container'>
+    <div>
+      <div class='heading mat-display-2'>brainbolt<span class="accent">.</span>io</div>
+    </div>
+    <div class='sub-heading'>
+        <div class='sub-heading-item'>
+            <a href='https://github.com/brainbolt'><mat-icon fontSet="fa" fontIcon="fa-github"></mat-icon></a>
+        </div>
+        <div class='sub-heading-item divider'>
+            <span class="light-accent">|</span>
+        </div>
+        <div class='sub-heading-item'>
+            <a href='https://www.linkedin.com/in/brainbolt'><mat-icon fontSet="fa" fontIcon="fa-linkedin-square"></mat-icon></a>
+        </div>
+        <div class='sub-heading-item divider'>
+            <span class="light-accent">|</span>
+        </div>
+        <div class='sub-heading-item'>
+            <a href='mailto:brandon@brainbolt.io'><mat-icon fontSet="fa" fontIcon="fa-comments-o"></mat-icon></a>
+        </div>
+    </div>
+  </div>
 </div>
-<div class='card-row'>
+<div class='card-row mat-typography'>
   <brainbolt-project-card *ngFor="let p of projects" [project]="p"></brainbolt-project-card>
 </div>

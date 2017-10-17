@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatCard, MatButton } from "@angular/material";
+import { MatCard, MatButton, MatIconRegistry } from "@angular/material";
 
 import { ProjectService } from "./project.service";
 import { ProjectCardComponent } from "./project-card/project-card.component";
@@ -10,8 +10,8 @@ import { ProjectCardComponent } from "./project-card/project-card.component";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private projService: ProjectService) {
-    
+  constructor(private projService: ProjectService, public matIconRegistry: MatIconRegistry) {
+    matIconRegistry.registerFontClassAlias('fontawesome', 'fa');
   }
 
   title = 'brainbolt.io';
