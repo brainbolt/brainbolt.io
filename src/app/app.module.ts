@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MatCardModule, MatButtonModule } from '@angular/material';
+import { MatCardModule, MatButtonModule, MatIconModule, MatIconRegistry, MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ProjectService } from "./project.service";
@@ -18,9 +18,9 @@ import { ProjectCardComponent } from './project-card/project-card.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MatCardModule, MatButtonModule
+    MatCardModule, MatButtonModule, MatIconModule, MatToolbarModule
   ],
-  providers: [ProjectService],
+  providers: [ProjectService, MatIconRegistry],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

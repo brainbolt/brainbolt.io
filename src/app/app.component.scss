@@ -7,21 +7,60 @@
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
 
-  .header-row {    
+  .heading-row {    
     display: flex;
-    font-size: 250%;
     height: 200px;
-  }
-  .heading {
-    margin:auto;
-    color: mat-color($primary, 600);
-    .dot {
-      color: mat-color($accent);
+    .heading-container {
+      margin: auto;
+      color: mat-color($primary, 600);
+      .heading {
+        margin-bottom: 20px;
+        font-family: 'Source Code Pro', monospace;
+      }
+      .accent {
+        color: mat-color($accent);
+      }
     }
+
+    .sub-heading {
+      display: flex;
+      font-size: large;
+
+      .sub-heading-item a:link {
+        color: mat-color($primary);
+      }
+
+      .sub-heading-item a:visited {
+        color: mat-color($primary);
+      }
+
+      .sub-heading-item a:active {
+        color: mat-color($primary);
+      }
+
+      .sub-heading-item a:hover {
+        color: mat-color($accent, 300);
+      }
+
+      .light-accent {
+        color: mat-color($accent, 100);
+      }
+      
+      .sub-heading-item {
+        margin: auto;  
+      }
+      
+      .divider {
+        font-size: small;
+      }
+    }
+
   }
+
+
   .card-row {
     display: flex; 
-    align-items: center; 
+    align-items: flex-start; 
     justify-content: space-around; 
     flex-wrap: wrap}
 }

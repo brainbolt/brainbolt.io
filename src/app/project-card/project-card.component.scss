@@ -11,5 +11,23 @@
   .card {
     width:350px; 
     margin-bottom: 20px;
-  }  
+    
+    mat-card-title-group {
+      background-color: mat-color($primary, 100);
+      padding: 16px 16px 0 16px;
+
+      @media (min-width: 601px) {
+        margin-right:-24px;
+        margin-left: -24px;
+      }
+
+      @media (max-width: 600px) {
+        margin-right:-16px;
+        margin-left: -16px;
+        margin-bottom: -16px;
+      }
+    }
+
+
+  }
 }
