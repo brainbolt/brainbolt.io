@@ -1,20 +1,15 @@
 <mat-card class="card" style="padding-top:0;">
-  <mat-card-title-group>
-    <mat-card-title>{{project.title}}</mat-card-title>
-    <mat-card-subtitle>{{project.subtitle}}</mat-card-subtitle>
+  <mat-card-title-group style="padding-bottom:16px;">
+    <mat-card-title style="font-size: 20px; display: inline;">{{project.title}}</mat-card-title>
+    <mat-card-subtitle style="display: inline"><span class="separator light-accent">&nbsp;|&nbsp;</span>{{project.subtitle}}</mat-card-subtitle>
   </mat-card-title-group>
   <img mat-card-image src="{{project.imageUrl}}" alt="{{project.imageAlt}}" />
   <mat-card-content>
-    <p>
-      {{project.description}}
+    <p *ngFor="let paragraph of project.description">
+      {{paragraph}}
     </p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-raised-button color="accent">ACCENT</button>
-    <button mat-button color="accent">ACCENT</button>
-    <button mat-raised-button color="primary">PRIMARY</button>
-    <button mat-button color="primary">PRIMARY</button>
-    <button mat-raised-button>DEFAULT</button>
-    <button mat-button>DEFAULT</button>
+    <a mat-raised-button color="accent" href="{{project.url}}" style="color:white;">LAUNCH</a>
   </mat-card-actions>
 </mat-card>

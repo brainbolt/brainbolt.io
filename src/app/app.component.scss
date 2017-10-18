@@ -54,13 +54,26 @@
         font-size: small;
       }
     }
-
   }
 
+  .projects-heading-row {
+
+    div {
+      margin: 0px 20px 40px 20px;
+      border-bottom: 1px dashed mat-color($primary, 300);
+      padding-bottom: 16px;
+    }
+
+    h1 {
+      margin: auto;
+      color: mat-color($accent, 400);
+    }
+  }
 
   .card-row {
     display: flex; 
     align-items: flex-start; 
     justify-content: space-around; 
-    flex-wrap: wrap}
+    flex-wrap: wrap
+  }
 }

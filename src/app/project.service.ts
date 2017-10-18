@@ -9,24 +9,19 @@ export class ProjectService {
     return [
       {
         title: "CubeNet",
-        subtitle:"Data-driven web application built using SQL Server, ASP.Net, C#, Bootstrap, and JavaScript",
-        imageUrl: "http://material.angular.io/assets/img/examples/shiba2.jpg",
-        imageAlt: "Photo of a Shiba Inu",
-        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap."
+        subtitle:"Data-driven intranet application",
+        imageUrl: "../../assets/images/cubenet-brainbolt-io.png",
+        imageAlt: "CubeNet screenshot",
+        description: ["Accounting package integration enabling task and order management.", "Technologies used include: SQL Server, IIS, ASP.Net, C#, NHibernate, Bootstrap, JQuery, and JavaScript"],
+        url: "http://cubenet.brainbolt.io"
       },
       {
         title: "Valquest.com",
-        subtitle: "blah blah blah",
+        subtitle: "Corporate Website",
         imageUrl: "../../assets/images/valquest-com.png",
-        imageAlt: "Photo of a Shiba Inu",
-        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap."
-      },
-      {
-        title: "wuiOS",
-        subtitle: "blah blah blah",
-        imageUrl: "http://material.angular.io/assets/img/examples/shiba2.jpg",
-        imageAlt: "Photo of a Shiba Inu",
-        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap."
+        imageAlt: "Valquest.com screenshot",
+        description: ["Technologies used include: ASP.Net MVC, JavaScript"],
+        url: "http://www.valquest.com"
       }];
  }  
 
