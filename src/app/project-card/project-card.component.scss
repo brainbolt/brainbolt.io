@@ -15,6 +15,16 @@
     mat-card-title-group {
       background-color: mat-color($primary, 100);
       padding: 16px 16px 0 16px;
+      border-bottom: 1px solid mat-color($primary, 300);
+
+      mat-card-title {
+        color: mat-color($primary, 600);
+      }
+
+      mat-card-subtitle > .separator {
+        font-size: 16px;
+        color: mat-color($accent, 100);
+      }
 
       @media (min-width: 601px) {
         margin-right:-24px;
@@ -27,7 +37,5 @@
         margin-bottom: -16px;
       }
     }
-
-
   }
 }

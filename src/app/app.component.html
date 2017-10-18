@@ -22,6 +22,11 @@
     </div>
   </div>
 </div>
+<div class='projects-heading-row mat-typography'>
+  <div>
+    <h1>Example Projects</h1>
+  </div>
+</div>
 <div class='card-row mat-typography'>
-  <brainbolt-project-card *ngFor="let p of projects" [project]="p"></brainbolt-project-card>
+  <brainbolt-project-card *ngFor="let proj of projects" [project]="proj"></brainbolt-project-card>
 </div>
