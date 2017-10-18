@@ -9,24 +9,27 @@ export class ProjectService {
     return [
       {
         title: "CubeNet",
-        subtitle:"Data-driven web application built using SQL Server, ASP.Net, C#, Bootstrap, and JavaScript",
-        imageUrl: "http://material.angular.io/assets/img/examples/shiba2.jpg",
-        imageAlt: "Photo of a Shiba Inu",
-        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap."
+        subtitle:"Accounting package integration enabling task and order management",
+        imageUrl: "../../assets/images/cubenet-brainbolt-io.png",
+        imageAlt: "CubeNet screenshot",
+        description: "Technologies used: SQL Server, IIS, ASP.Net, C#, Bootstrap, JQuery, and JavaScript",
+        url: "http://cubenet.brainbolt.io"
       },
       {
         title: "Valquest.com",
-        subtitle: "blah blah blah",
+        subtitle: "Company website",
         imageUrl: "../../assets/images/valquest-com.png",
-        imageAlt: "Photo of a Shiba Inu",
-        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap."
+        imageAlt: "Valquest.com screenshot",
+        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap.",
+        url: "http://www.valquest.com"
       },
       {
         title: "wuiOS",
         subtitle: "blah blah blah",
         imageUrl: "http://material.angular.io/assets/img/examples/shiba2.jpg",
         imageAlt: "Photo of a Shiba Inu",
-        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap."
+        description: "Used object-oriented programming (OOP), relational databases, object-relational mapping (ORM), and web frameworks, to develop a comprehensive suite of mission-critical applications which increased productivity and profitability, and streamlined communications company-wide. Technologies used include C#, JavaScript, SQL Server, IIS, NHibernate, VBScript, and Bootstrap.",
+        url: "http://cubenet.brainbolt.io"
       }];
  }  
 
