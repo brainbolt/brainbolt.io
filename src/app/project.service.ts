@@ -9,7 +9,7 @@ export class ProjectService {
     return [
       {
         title: "CubeNet",
-        subtitle:"Data-driven intranet application",
+        subtitle:"Data-driven Intranet Application",
         imageUrl: "../../assets/images/cubenet-brainbolt-io.png",
         imageAlt: "CubeNet screenshot",
         description: ["Accounting package integration enabling task and order management.", "Technologies used include: SQL Server, IIS, ASP.Net, C#, NHibernate, Bootstrap, JQuery, and JavaScript"],
