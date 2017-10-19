@@ -8,8 +8,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "b": "ng b --prod --delete-output-path=false --output-hashing none"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

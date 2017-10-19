@@ -3,6 +3,7 @@
 
 // Define a mixin that accepts a theme and outputs the color styles for the component.
 @mixin app-component($theme) {
+  $config: mat-typography-config();
   // Extract whichever individual palettes you need from the theme.
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
@@ -14,6 +15,14 @@
       margin: auto;
       color: mat-color($primary, 600);
       .heading {
+        @media (max-width: 419px) {
+          font-size: mat-font-size($config, display-1);
+        }
+    
+        @media (min-width: 420px) {
+          font-size: mat-font-size($config, display-2);
+        }
+
         margin-bottom: 20px;
         font-family: 'Source Code Pro', monospace;
       }
@@ -58,15 +67,23 @@
 
   .projects-heading-row {
 
-    div {
+    .projects-heading-container {
       margin: 0px 20px 40px 20px;
       border-bottom: 1px dashed mat-color($primary, 300);
       padding-bottom: 16px;
     }
 
-    h1 {
+    .projects-heading {
       margin: auto;
       color: mat-color($accent, 400);
+      @media (max-width: 419px) {
+        font-size: mat-font-size($config, subheading-2);
+      }
+  
+      @media (min-width: 420px) {
+        font-size: mat-font-size($config, title);
+      }
+
     }
   }
 

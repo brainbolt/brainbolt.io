@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MatCardModule, MatButtonModule, MatIconModule, MatIconRegistry, MatToolbarModule } from '@angular/material';
-
 import { AppComponent } from './app.component';
 import { ProjectService } from "./project.service";
 import { ProjectCardComponent } from './project-card/project-card.component';

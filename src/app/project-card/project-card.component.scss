@@ -9,7 +9,14 @@
   $warn: map-get($theme, warn);
 
   .card {
-    width:350px; 
+    @media (max-width: 419px) {
+      width: 300px;
+    }
+
+    @media (min-width: 420px) {
+      width: 350px;
+    }
+
     margin-bottom: 20px;
     
     mat-card-title-group {
