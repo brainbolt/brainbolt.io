@@ -9,7 +9,11 @@
   $warn: map-get($theme, warn);
 
   .card {
-    @media (max-width: 419px) {
+    @media (max-width: 369px) {
+      width: 90%;
+    }
+
+    @media (min-width: 370px) and (max-width: 419px) {
       width: 300px;
     }
 
